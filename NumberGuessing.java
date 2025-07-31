@@ -17,6 +17,14 @@ public class NumberGuessing {
         // Loop for K attempts
         for (int i = 0; i < K; i++) {
             System.out.print("Enter your guess: ");
+
+            if (!sc.hasNextInt()) {
+                System.out.println("Invalid input. Please enter an integer.");
+                sc.next(); // discard invalid input
+                i--; // do not count this as an attempt
+                continue;
+            }
+
             int guess = sc.nextInt();
 
             // Check conditions
