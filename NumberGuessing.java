@@ -18,6 +18,11 @@ public class NumberGuessing {
         for (int i = 0; i < K; i++) {
             System.out.print("Enter your guess: ");
 
+            if (!sc.hasNext()) {
+                System.out.println("No more input. Exiting early.");
+                break;
+            }
+
             if (!sc.hasNextInt()) {
                 System.out.println("Invalid input. Please enter an integer.");
                 sc.next(); // discard invalid input
