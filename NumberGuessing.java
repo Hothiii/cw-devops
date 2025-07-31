@@ -11,7 +11,7 @@ public class NumberGuessing {
         // Number of attempts
         int K = 5;
 
-        System.out.println("A number is chosen between 1 and 100.");
+        System.out.println("A number is chosen between 1 and 100. This is a test for demo");
         System.out.println("You have " + K + " attempts to guess the correct number.");
 
         // Loop for K attempts
